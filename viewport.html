@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/viewport-style.css">
+  </head>
+  <body>
+    <a href="adaptive-content.html">К адаптивному тексту</a>
+    <input type="button" id="button" value="Настроить Viewport">
+    <script>
+      var toggle = true;
+      var onceClicked = false;
+      button.onclick = function() {
+        if (toggle){
+          if (onceClicked) {
+            meta=document.head.lastElementChild;
+            meta.content='width=device-width, initial-scale=1.0';
+          } else {
+            var meta = document.createElement('meta');
+            meta.name='viewport';
+            meta.content='width=device-width, initial-scale=1.0';
+            document.head.appendChild(meta);
+            onceClicked = true;
+          }
+          button.value='Убрать настройку';
+        } else {
+          meta=document.head.lastElementChild;
+          meta.content='width: auto;';
+          button.value='Настроить Viewport';
+        }
+        toggle=!toggle;
+      };
+    </script>
+    <h2>Толстянка</h2>
+    <img src="images/Crassula.jpg" alt="">
+    <p>Толстя́нка (лат. Crássula) — род суккулентных растений семейства Толстянковые. Включает в себя от 300 до 350 видов, из которых более двухсот произрастают в Южной Африке; значительное число видов распространено в Тропической Африке и на Мадагаскаре, несколько видов встречается на юге Аравии. Растения этого рода распространены очень широко, но преимущественно в Южном полушарии. </p>
+    <p>Многие виды используются в комнатном цветоводстве; комнатные растения этого рода с круглыми листьями, похожими на монеты, иногда называют «денежным деревом». Некоторые суккуленты в естественных условиях могут накапливать заметное количество мышьяка в листьях, поэтому могут быть ядовитыми (это не относится к комнатным растениям, растущим на бедной мышьяком почве)</p>
+  </body>
+</html>
