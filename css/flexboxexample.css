@@ -1,0 +1,45 @@
+body {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+}
+p {
+  padding-left: 20px;
+  font-family: Arial;
+}
+ul {
+    padding:0;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  list-style: none;
+}
+li > img {
+  width: 40px;
+  height: 40px;
+}
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu-link, .order {
+  text-align: center;
+  background-color:#FFDAB9;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  font-family: Arial;
+  font-size: 1rem;
+  flex-grow:1;
+  flex: 20%;
+  margin:0.5em;
+}
+.order {
+  background-color: #DC143C;
+  color: white;
+}
