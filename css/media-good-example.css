@@ -1,0 +1,101 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Arial;
+}
+.header-picture {
+  background: url('../images/big-alps.jpg') no-repeat center;
+  height: 200px;
+}
+.comment {
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.hamburger-menu {
+  display:none;
+  margin-left:15px;
+}
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  padding:0;
+  background-color:#bcc6f8;
+}
+@media screen and (max-width:600px){
+  .hamburger-menu{
+    display: initial;
+  }
+  .menu {
+    display:none;
+    padding-top: 0.75em;
+    padding-bottom:0.75em;
+  }
+  .menu.opened {
+    display: block;
+  }
+}
+.menu-link {
+  text-align: center;
+  background-color:white;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  font-family: Arial;
+  font-size: 1rem;
+  flex-grow:1;
+  margin:0.5em;
+  list-style:none;
+  color: #0d0c49;
+}
+.hamburger-menu>img{
+  height:50px;
+  width:50px;
+}
+p {
+  margin-left: 1.5em;
+}
+.tourist {
+  display: block;
+  width:80%;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  height: auto;
+}
+.textcols>p {
+  display: inline;
+  margin-left:0;
+}
+.textcols {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+	column-width: 48%;
+	column-count: 2;
+	column-gap: 4%;
+}
+@media screen and (max-width:700px){
+  .textcols {
+    /*column-width: 100%;*/
+  	column-count: 1;
+  }
+}
+.bismark-foto {
+  display: block;
+  width:80%;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.name {
+  margin-left:15px;
+  margin-right: 15px;
+  font-family: Serif;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (max-width:570px){
+  .toomuch {
+    display:none;
+  }
+}
